@@ -8,7 +8,7 @@ RUN apk update && apk upgrade && \
 RUN mkdir -p /opt/smahub
 WORKDIR /opt/smahub
 
-RUN git clone --depth=1 --branch=main https://github.com/AnotherDaniel/smahub . && rm -fr .git*
+RUN git clone --depth=1 --branch=evcharger_dev https://github.com/derTim/smahub . && rm -fr .git*
 #COPY . /opt/smahub
 RUN pip3 install .
 
